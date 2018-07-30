@@ -1,0 +1,21 @@
+FIT3143 Assignment 2 Wireless Sensor Network README
+
+Damian Katsigiannis: 24222933
+
+Running the program:
+
+	- The gzipped archive contains the following files:
+		- WSN.c
+		- report.pdf
+		- README
+		- Makefile
+
+	- The included Makefile will allow you to compile WSN.c through the use of the make command as long as the user is in the current directory of the archive. Please ensure that OpenMPI is installed as the Makefile uses mpicc to compile the program.
+
+	- Once make has been run, WSN.c can be run with the following arguments:
+	
+		- mpirun -np 61 WSN "threshold value"
+
+	- The 61 is required specifically as the task dictates 60 processes in the grid and this program utilises a seperate node as the base station. 
+
+	- The threshold value must be an integer value between 0 and 50. The lower the value the higher the chance of events occurring so lower values are preferable for testing these scenarios. 
